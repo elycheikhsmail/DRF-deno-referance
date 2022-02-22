@@ -1,0 +1,31 @@
+be in this directory (the same level as manage.py )
+create virtual env (only once)
+python3 -m venv env
+
+activate virual env  
+source env/bin/activate 
+
+install deps
+pip install -r requirements.txt
+
+
+
+then run those commands 
+
+python remove_sqlite.py
+python manage.py makemigrations 
+python manage.py migrate
+clear
+python manage.py runserver 8080
+ 
+
+ the go to ../test_by_deno
+ read the README.md to run commands for tests
+ tests are build using deno build in test tool and fetch api
+
+ upload using postman for test using 
+ url http://127.0.0.1:8080/upload/up2
+ method POST
+ type form-data
+ filed 'description','document'
+     

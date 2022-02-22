@@ -1,0 +1,6 @@
+clear 
+deno test --allow-net  --location http://localhost:8080  tests/auth2.test.ts tests/todo_owner_crud.test.ts
+
+
+clear 
+deno test --allow-net --allow-write --location http://localhost:8080  --fail-fast=1 tests/auth.test.ts tests/todo_owner_crud.test.ts

@@ -1,0 +1,21 @@
+global
+note install latest verion of django gloably
+create new project with :
+django-admin project setup
+change setup to my-project-name
+
+local
+inside myproject name init new virtual env 
+create virtual env
+
+create file requerements.txt
+pip install django
+pip install djangorestframework
+python -m pip install django-cors-headers
+
+python -m pip freeze > requirements.txt
+
+python -m pip -r requirements.txt
+
+install other needed package
+continue your work
